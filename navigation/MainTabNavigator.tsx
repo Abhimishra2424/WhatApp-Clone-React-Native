@@ -7,6 +7,7 @@ import TabTwoScreen from "../screens/TabTwoScreen";
 import { MainTabParamList } from "../types";
 import { Fontisto } from "@expo/vector-icons";
 import { color } from "react-native-reanimated";
+import ChatListItem from "../components/ChatListItem"
 
 const MainTab = createMaterialTopTabNavigator<MainTabParamList>();
 
@@ -41,7 +42,7 @@ export default function MainTabNavigator() {
           tabBarShowLabel: false,
         }}
       />
-      <MainTab.Screen name="Chats" component={TabTwoScreen} />
+      <MainTab.Screen name="Chats" component={ChatListItem} />
       <MainTab.Screen name="Status" component={TabTwoScreen} />
       <MainTab.Screen name="Calls" component={TabTwoScreen} />
     </MainTab.Navigator>
