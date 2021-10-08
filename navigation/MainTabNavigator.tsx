@@ -6,7 +6,6 @@ import TabOneScreen from "../screens/ChatsScreen";
 import TabTwoScreen from "../screens/TabTwoScreen";
 import { MainTabParamList } from "../types";
 import { Fontisto } from "@expo/vector-icons";
-import { color } from "react-native-reanimated";
 import ChatsScreen from "../screens/ChatsScreen";
 
 const MainTab = createMaterialTopTabNavigator<MainTabParamList>();
