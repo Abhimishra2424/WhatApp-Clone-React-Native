@@ -18,6 +18,7 @@ import {
 } from "@expo/vector-icons";
 import MainTabNavigator from "./MainTabNavigator";
 import ChatRoomScreen from "../screens/ChatRoomScreen";
+import ContactsScreen from "../screens/ContactsScreen";
 
 export default function Navigation({
   colorScheme,
@@ -78,11 +79,6 @@ function RootNavigator() {
         }}
       />
       <Stack.Screen
-        name="NotFound"
-        component={NotFoundScreen}
-        options={{ title: "Oops!" }}
-      />
-      <Stack.Screen
         name="ChatRoom"
         component={ChatRoomScreen}
         options={({ route }) => ({
@@ -107,6 +103,7 @@ function RootNavigator() {
           ),
         })}
       />
+      <Stack.Screen name="Contacts" component={ContactsScreen} />
     </Stack.Navigator>
   );
 }

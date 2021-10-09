@@ -15,6 +15,7 @@ export type RootStackParamList = {
   Root: NavigatorScreenParams<MainTabParamList> | undefined;
   NotFound: undefined;
   ChatRoom: undefined;
+  Contacts:undefined
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
