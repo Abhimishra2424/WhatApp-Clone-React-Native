@@ -11,15 +11,15 @@ const NewMessageButtom = () => {
     navigation.navigate("Contacts");
   };
   return (
-    <TouchableOpacity onPress={onPress}>
-      <View style={styles.container}>
+    <View style={styles.container}>
+      <TouchableOpacity onPress={onPress}>
         <MaterialCommunityIcons
           name="message-reply-text"
           size={28}
           color="#fff"
         />
-      </View>
-    </TouchableOpacity>
+      </TouchableOpacity>
+    </View>
   );
 };
 
